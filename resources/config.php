@@ -13,6 +13,16 @@ CREATE TABLE IF NOT EXISTS `users` (
   UNIQUE KEY `email` (`email`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
+
+CREATE TABLE IF NOT EXISTS `posts` (
+  `post_id` int(5) NOT NULL AUTO_INCREMENT,
+  `userid` varchar(25) NOT NULL,
+  `title` varchar(25) NOT NULL,
+  `location` varchar(35) NOT NULL,
+  `time` varchar(50) NOT NULL,
+  `score` int(5) NOT NULL,
+  PRIMARY KEY (`post_id`)
+  ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 */
 
 $user="root"; //Set SQL ADMIN user. root is the default
