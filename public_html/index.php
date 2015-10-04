@@ -104,6 +104,35 @@ $userRow=mysql_fetch_array($res);
       <div class="col-md-12"></div>
       <div class="col-md-12"></div>
     </div>
+	<table>
+            <tr>
+              <th colspan="15">Happenin' Presentation - Syracuse Tech Center - 1:00pm</th>
+            </tr>
+            <tr>
+              <td colspan="15">Check out our website!</td>
+            </tr>
+            <tr>
+              <td colspan="15">Professional - www.itshappenin.com</td>
+            </tr>
+            <tr>
+            </td>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <ul class="deposit" style="float:right;list-style-type:none;">
+					<a href="javascript:void(0)" id="inc"><li class="first">+</li></a>
+					<a href="javascript:void(0)" id="dec"><li class="second">-</li></a>
+				</ul>
+				<div class="right deposit_amount"style="float:right"><span id="amountSpan">0</span></div>
+                <script type="text/javascript">
+                    $(function(){
+						$("#inc").click(function(){
+						$("#amountSpan").text( Number($("#amountSpan").text()) + 1 );
+						});
+						$("#dec").click(function(){
+						$("#amountSpan").text( Number($("#amountSpan").text()) - 1 );
+						});
+					});
+                </script>
+</table>
   </div>
 </div>
 <div class="col-md-12"></div>
